@@ -1,74 +1,74 @@
-# Dataset procesado de baterías de litio para selección de atributos con algoritmos cuánticos
+# Processed Lithium Battery Dataset for Feature Selection with Quantum Algorithms
 
-Este repositorio contiene un dataset procesado para experimentos de selección de atributos y clasificación mediante algoritmos híbridos clásico-cuánticos. El conjunto de datos fue construido a partir del dataset original **eVTOL Battery Dataset**, disponible públicamente en KiltHub/Figshare mediante el DOI:
+This repository contains a processed dataset for feature selection and classification experiments using hybrid classical-quantum algorithms. The dataset was built from the original **eVTOL Battery Dataset**, publicly available on KiltHub/Figshare through the DOI:
 
 https://doi.org/10.1184/R1/14226830
 
-## Descripción general
+## Overview
 
-El dataset original contiene mediciones experimentales de baterías de ion-litio sometidas a perfiles de carga y descarga asociados con ciclos de operación de aeronaves eléctricas de despegue y aterrizaje vertical, conocidas como eVTOL. A partir de dicho conjunto original, se realizó un proceso de selección, limpieza y estructuración de datos para obtener un dataset reducido y preparado para tareas de aprendizaje automático.
+The original dataset contains experimental measurements of lithium-ion batteries subjected to charge and discharge profiles associated with operational cycles of electric vertical take-off and landing aircraft, commonly known as eVTOLs. From this original dataset, a process of data selection, cleaning, and structuring was carried out to obtain a reduced dataset prepared for machine learning tasks.
 
-El dataset procesado incluido en este repositorio está compuesto por:
+The processed dataset included in this repository consists of:
 
-- **637 vectores**
-- **10 atributos**
-- **3 clases de clasificación**
+- **637 vectors**
+- **10 attributes**
+- **3 classification classes**
 
-Las clases consideradas corresponden a subconjuntos derivados de las celdas:
+The considered classes correspond to subsets derived from the following cells:
 
 - `VAH10`
 - `VAH25`
 - `VAH30`
 
-## Atributos del dataset
+## Dataset Attributes
 
-El dataset procesado contiene los siguientes atributos:
+The processed dataset contains the following attributes:
 
-| Atributo | Descripción |
+| Attribute | Description |
 |---|---|
-| `time_s` | Tiempo transcurrido del experimento, expresado en segundos. |
-| `Ecell_V` | Voltaje de la celda, expresado en volts. |
-| `I_mA` | Corriente registrada en la celda, expresada en miliamperes. |
-| `EnergyCharge_W_h` | Energía acumulada durante el proceso de carga, expresada en watt-hora. |
-| `QCharge_mA_h` | Capacidad acumulada durante la carga, expresada en miliampere-hora. |
-| `EnergyDischarge_W_h` | Energía acumulada durante el proceso de descarga, expresada en watt-hora. |
-| `QDischarge_mA_h` | Capacidad acumulada durante la descarga, expresada en miliampere-hora. |
-| `Temperature__C` | Temperatura registrada de la celda, expresada en grados Celsius. |
-| `cycleNumber` | Número de ciclo de carga/descarga. |
-| `Ns` | Segmento o estado asociado al ciclo experimental. |
+| `time_s` | Elapsed experiment time, expressed in seconds. |
+| `Ecell_V` | Cell voltage, expressed in volts. |
+| `I_mA` | Current recorded in the cell, expressed in milliamperes. |
+| `EnergyCharge_W_h` | Accumulated energy during the charging process, expressed in watt-hours. |
+| `QCharge_mA_h` | Accumulated capacity during charging, expressed in milliampere-hours. |
+| `EnergyDischarge_W_h` | Accumulated energy during the discharge process, expressed in watt-hours. |
+| `QDischarge_mA_h` | Accumulated capacity during discharge, expressed in milliampere-hours. |
+| `Temperature__C` | Recorded cell temperature, expressed in degrees Celsius. |
+| `cycleNumber` | Charge/discharge cycle number. |
+| `Ns` | Segment or state associated with the experimental cycle. |
 
-Además, cada registro incluye una etiqueta de clase asociada a la celda de origen: `VAH10`, `VAH25` o `VAH30`.
+Additionally, each record includes a class label associated with the source cell: `VAH10`, `VAH25`, or `VAH30`.
 
-## Origen de los datos
+## Data Source
 
-Este dataset es una versión procesada y reducida construida a partir de:
+This dataset is a processed and reduced version built from:
 
 **Bills, A., Viswanathan, V., Sripad, S., Frank, E., Charles, D., & Fredericks, W. L.  
 eVTOL Battery Dataset. Carnegie Mellon University. KiltHub/Figshare.  
 DOI: 10.1184/R1/14226830**
 
-El dataset original no fue creado por los autores de este repositorio. Este repositorio únicamente contiene una versión procesada con fines académicos y experimentales.
+The original dataset was not created by the authors of this repository. This repository only contains a processed version for academic and experimental purposes.
 
-## Objetivo del dataset procesado
+## Purpose of the Processed Dataset
 
-El objetivo de este dataset es facilitar experimentos relacionados con:
+The purpose of this dataset is to facilitate experiments related to:
 
-- Selección de atributos.
-- Reducción de dimensionalidad.
-- Clasificación supervisada.
-- Aprendizaje automático cuántico.
-- Algoritmos híbridos clásico-cuánticos.
-- Evaluación de modelos como QSVM y métodos de selección secuencial de atributos.
+- Feature selection.
+- Dimensionality reduction.
+- Supervised classification.
+- Quantum machine learning.
+- Hybrid classical-quantum algorithms.
+- Evaluation of models such as QSVM and sequential feature selection methods.
 
-En particular, este dataset fue preparado para analizar el comportamiento de diferentes baterías de litio y evaluar qué atributos son más relevantes para distinguir las clases consideradas.
+In particular, this dataset was prepared to analyze the behavior of different lithium batteries and evaluate which attributes are most relevant for distinguishing the considered classes.
 
-## Uso recomendado
+## Recommended Use
 
-Este dataset puede utilizarse para experimentos académicos relacionados con clasificación y selección de características. Se recomienda citar tanto este repositorio como el dataset original.
+This dataset can be used for academic experiments related to classification and feature selection. It is recommended to cite both this repository and the original dataset.
 
-## Cita del dataset original
+## Citation of the Original Dataset
 
-Si utilizas este dataset procesado, cita también la fuente original:
+If you use this processed dataset, please also cite the original source:
 
 ```bibtex
 @misc{bills2021evtol,
@@ -80,3 +80,4 @@ Si utilizas este dataset procesado, cita también la fuente original:
   doi          = {10.1184/R1/14226830},
   url          = {https://doi.org/10.1184/R1/14226830}
 }
+```
